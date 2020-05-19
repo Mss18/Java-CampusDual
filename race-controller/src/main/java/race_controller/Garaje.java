@@ -14,13 +14,11 @@ public class Garaje {
 		this.listaCoches = listaCoches;
 	}
 	
-	public Garaje() {
-		
-	}
 
 	public Garaje(String nombre) {
-		
+	this.nombre = nombre;
 	}
+
 
 	public String getNombre() {
 		return nombre;
