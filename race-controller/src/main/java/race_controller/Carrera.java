@@ -5,9 +5,20 @@ import java.util.ArrayList;
 public abstract class Carrera {
 
 	private String nombreCarrera;
-	ArrayList <Garaje> listaGarajes;
-	private int distancia;
+	ArrayList <Garaje> listaGarajes = new ArrayList<Garaje>();
+	private int distancia;	
 	
+	
+	public Carrera() {
+		super();
+		
+	}
+	public Carrera(String nombreCarrera, ArrayList<Garaje> listaGarajes, int distancia) {
+		super();
+		this.nombreCarrera = nombreCarrera;
+		this.listaGarajes = listaGarajes;
+		this.distancia = distancia;
+	}
 	public int getDistancia() {
 		return distancia;
 	}
@@ -25,5 +36,11 @@ public abstract class Carrera {
 	}
 	public void setListaGarajes(ArrayList<Garaje> listaGarajes) {
 		this.listaGarajes = listaGarajes;
+	}
+	
+	public void mostrarGarajes() {
+		for(Garaje garaje : listaGarajes) {
+			System.out.println(garaje.toString());
+		}
 	}
 }

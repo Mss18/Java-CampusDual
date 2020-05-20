@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 public class Garaje {
 
-	String nombre;
-	ArrayList<Coche> listaCoches;
+	private String nombre;
+	ArrayList<Coche> listaCoches = new ArrayList<Coche>();
 	
 	
-	public Garaje(String nombre, ArrayList listaCoches) {
+	public Garaje(String nombre, ArrayList<Coche> listaCoches) {
 		super();
 		this.nombre = nombre;
 		this.listaCoches = listaCoches;
@@ -31,5 +31,11 @@ public class Garaje {
 	}
 	public void setListaCoches(ArrayList<Coche> listaCoches) {
 		this.listaCoches = listaCoches;
+	}
+	
+	public void mostrarCoches() {
+		for(Coche coche : listaCoches) {
+			System.out.println(coche.toString());
+		}
 	}
 }

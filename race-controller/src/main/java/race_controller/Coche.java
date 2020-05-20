@@ -20,10 +20,7 @@ public class Coche {
 		this.pegatinaGaraje = pegatinaGaraje;
 	}
 		
-	public Coche(int i, String marca2, String modelo2) {
-		// TODO Auto-generated constructor stub
-	}
-
+	
 	public int getPuntos() {
 		return puntos;
 	}
@@ -68,4 +65,6 @@ public class Coche {
 	public void setPegatinaGaraje(String pegatinaGaraje) {
 		this.pegatinaGaraje = pegatinaGaraje;
 	}
+
+	
 }
