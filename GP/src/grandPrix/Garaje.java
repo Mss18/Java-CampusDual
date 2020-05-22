@@ -5,12 +5,13 @@ import java.util.ArrayList;
 public class Garaje {
 	
 	private String nombreGaraje;
-	private ArrayList<Coche> listaCochesGaraje = new ArrayList<Coche>();
+	ArrayList<Coche> listaCochesGaraje;	
 	
-	public Garaje(String nombreGaraje, ArrayList<Coche> listaCochesGaraje) {
+
+	public Garaje(String nombreGaraje) {
 		super();
 		this.nombreGaraje = nombreGaraje;
-		this.listaCochesGaraje = listaCochesGaraje;
+	
 	}
 
 	public String getNombreGaraje() {
@@ -34,7 +35,25 @@ public class Garaje {
 		return "Garaje: " + nombreGaraje + " Coches: " + listaCochesGaraje;
 	}
 	
+	// Método para añadir coches a listaCochesGaraje;
+	public void añadirCoche(String marca, String modelo) {
+		listaCochesGaraje.add(new Coche(marca, modelo));
+	}
 	
-
+	// Método para eliminar coches de listaCochesGaraje;
+	public void eliminarCoche(String marca, String modelo) {
+		for(Coche c : listaCochesGaraje) {
+			if(c.getMarca().equals(marca) && c.getModelo().equals(modelo)) {
+				listaCochesGaraje.remove(c);
+			}
+		}
+	}
+	
+	// Método para mostrar todos los coches de listaCochesGaraje
+	public void mostrarCoches() {
+		for(Coche c : listaCochesGaraje) {
+			System.out.println(c.getMarca() + " " + c.getModelo());
+		}
+	}
 	
 }

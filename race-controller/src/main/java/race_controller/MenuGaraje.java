@@ -1,14 +1,16 @@
 package race_controller;
 
-import java.util.ArrayList;
+
 import java.util.Scanner;
+
+import grandPrix.Input;
 
  
 
 public class MenuGaraje {
 	
-	Scanner scanner = new Scanner(System.in);
-	ArrayList<Garaje> listadoGarajes = new ArrayList<Garaje>();
+	Input input = new Input();
+
 	
 	public void iniciarMenuGaraje() {
 		int seleccion = -1;					
@@ -31,7 +33,7 @@ public class MenuGaraje {
 						);
 				System.out.print("\t Introduce una opción: \n");
 
-				seleccion = Integer.parseInt(scanner.nextLine());
+				seleccion = input.integer();
 
 				switch (seleccion) {
 

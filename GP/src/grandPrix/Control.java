@@ -1,21 +1,19 @@
-package race_controller;
+package grandPrix;
 
-import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Control {
-
-	static Scanner scanner = new Scanner(System.in);
-//	static ArrayList<Coche> podioList = new ArrayList<Coche>();
-	static ArrayList<Garaje> listadoGarajes = new ArrayList<Garaje>();
+	
+	static int seleccion = -1;
+	
 
 	public static void main(String[] args) {
-
-		int select = -1;
+		
 		
 		Input input = new Input();
+		Menu menu = new Menu();
+		Gestor gestor = new Gestor();
 		
-		while (select != 0) {
+		while (seleccion != 0) {
 			try {
 				System.out.println(
 						"***********RACE CONTROL************\n" 
@@ -32,22 +30,22 @@ public class Control {
 
 				System.out.print("\t Introduce una opción: ");
 				System.out.println("");
-				select = Integer.parseInt(scanner.nextLine());
+				seleccion = input.integer();
 
-				switch (select) {
+				switch (seleccion) {
 
 				case 1:
+					menu.menuGarajes(gestor);
 					
-					MenuGaraje menuGaraje = new MenuGaraje();
-					menuGaraje.iniciarMenuGaraje();
-					
-				case 2:
-					
-					MenuCarrera menuCarrera = new MenuCarrera();
-					menuCarrera.iniciarMenuCarrera(listadoGarajes);
-									
 					break;
+					
+				case 2:					
+						
+					
+					break;
+					
 				case 3:
+					
 					break;
 
 				case 0:
@@ -55,14 +53,13 @@ public class Control {
 					break;
 
 				default:
-					System.out.println("Número inválido");
-					break;
+					System.out.println("Número incorrecto");					
 				}
 
 				System.out.println("\n");
 
-			} catch (Exception e) {
-				System.out.println("Controlar error!");
+			} catch (Exception error) {
+				System.out.println("ERROR --Menú principal!!--");
 			}
 		}
 	}

@@ -6,18 +6,20 @@ public abstract class Carrera {
 	
 	private String nombreCarrera;
 	private int duracion;
-	private ArrayList<Garaje> garajesParticipantes = new ArrayList<Garaje>();
+	private ArrayList<Garaje> garajesParticipantes;
 	
 	
 
-	public Carrera(String nombreCarrera, int duracion, ArrayList<Garaje> garajesParticipantes) {
-		super();
+	public Carrera(String nombreCarrera, ArrayList<Garaje> garajesParticipantes) {
 		this.nombreCarrera = nombreCarrera;
-		this.duracion = duracion;
 		this.garajesParticipantes = garajesParticipantes;
 	}
 
-	
+
+	public Carrera(String nombreCarrera) {
+		
+	}
+
 
 	public String getNombreCarrera() {
 		return nombreCarrera;
@@ -35,7 +37,7 @@ public abstract class Carrera {
 		this.duracion = duracion;
 	}
 
-	public static ArrayList<Garaje> getGarajesParticipantes() {
+	public ArrayList<Garaje> getGarajesParticipantes() {
 		return garajesParticipantes;
 	}
 
@@ -49,7 +51,33 @@ public abstract class Carrera {
 		return "Nombre: " + nombreCarrera + ", Duración: " + duracion + ", ";
 	}
 	
+	//Método para añadir garajes a garajesParticipantes.
+		public void añadirGaraje(String nombreGaraje, ArrayList<Garaje> garajesParticipantes) {
+			for(Garaje g : garajesParticipantes) {
+				if(g.getNombreGaraje().equals(nombreGaraje)) {
+					garajesParticipantes.add(g);
+				}
+			}
+		}
+	
+	// Método para eliminar garajes de garajesParticipantes.
+		public void eliminarrGaraje(String nombreGaraje, ArrayList<Garaje> garajesParticipantes) {
+			for(Garaje g : garajesParticipantes) {
+				if(g.getNombreGaraje().equals(nombreGaraje)) {
+					garajesParticipantes.remove(g);
+				}
+			}
+		}
+	
+	// Método para mostrar todos los garajes de garajesParticipantes.
+	public void mostrarGarajes() {
+		for(Garaje g : garajesParticipantes) {
+			System.out.println(g.getNombreGaraje());
+		}
+	}
+	
+	
 	public abstract String podio();
 	
-
 }
+

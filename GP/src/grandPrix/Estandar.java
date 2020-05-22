@@ -4,30 +4,18 @@ import java.util.ArrayList;
 
 public class Estandar extends Carrera{
 
-	
-	
-	
-
-	public Estandar(String nombreCarrera, int duracion, ArrayList<Garaje> garajesParticipantes) {
-		super(nombreCarrera, duracion, garajesParticipantes);
-		
+	public Estandar(String nombreCarrera, ArrayList<Garaje> garajesParticipantes) {
+		super(nombreCarrera, garajesParticipantes);		
 	}
-
-
-
-	@Override
-	public String toString() {
-		return super.toString();
+	
+	public Estandar(String nombreCarrera) {
+		super(nombreCarrera);
 	}
-
-
+	
 
 	@Override
 	public String podio() {
-		
+		// TODO Auto-generated method stub
 		return null;
 	}
-
-	
-
 }
