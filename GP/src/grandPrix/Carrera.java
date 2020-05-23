@@ -6,8 +6,7 @@ public abstract class Carrera {
 	
 	private String nombreCarrera;
 	private int duracion;
-	private ArrayList<Garaje> garajesParticipantes;
-	
+	private ArrayList<Garaje> garajesParticipantes;	
 	
 
 	public Carrera(String nombreCarrera, ArrayList<Garaje> garajesParticipantes) {
@@ -15,20 +14,13 @@ public abstract class Carrera {
 		this.garajesParticipantes = garajesParticipantes;
 	}
 
-
-	public Carrera(String nombreCarrera) {
-		
+	public Carrera(String nombreCarrera) {		
 	}
-
 
 	public String getNombreCarrera() {
 		return nombreCarrera;
 	}
-
-	public void setNombreCarrera(String nombreCarrera) {
-		this.nombreCarrera = nombreCarrera;
-	}
-
+	
 	public int getDuracion() {
 		return duracion;
 	}

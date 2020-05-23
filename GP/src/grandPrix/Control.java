@@ -35,17 +35,15 @@ public class Control {
 				switch (seleccion) {
 
 				case 1:
-					menu.menuGarajes(gestor);
-					
+					menu.menuGarajes(gestor);					
 					break;
 					
-				case 2:					
-						
-					
+				case 2:				
+					menu.menuCarreras(gestor);										
 					break;
 					
 				case 3:
-					
+					menu.menuTorneos(gestor);
 					break;
 
 				case 0:

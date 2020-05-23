@@ -18,10 +18,6 @@ public class Garaje {
 		return nombreGaraje;
 	}
 
-	public void setNombreGaraje(String nombreGaraje) {
-		this.nombreGaraje = nombreGaraje;
-	}
-
 	public ArrayList<Coche> getListaCochesGaraje() {
 		return listaCochesGaraje;
 	}
