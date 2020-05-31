@@ -1,0 +1,6 @@
+com\ontimize\hr\ws\core\rest\UserRestController.class
+com\ontimize\hr\ws\core\rest\MasterRestController.class
+com\ontimize\hr\ws\core\rest\TestRestController.class
+com\ontimize\hr\ws\core\rest\MainRestController.class
+com\ontimize\hr\ws\core\rest\OfferRestController.class
+com\ontimize\hr\ws\core\rest\CandidateRestController.class

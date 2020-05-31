@@ -1,0 +1,4 @@
+com\ontimize\hr\api\core\service\IMasterService.class
+com\ontimize\hr\api\core\service\IOfferService.class
+com\ontimize\hr\api\core\service\IUserService.class
+com\ontimize\hr\api\core\service\ICandidateService.class

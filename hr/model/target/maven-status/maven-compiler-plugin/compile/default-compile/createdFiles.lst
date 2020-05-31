@@ -1,0 +1,16 @@
+com\ontimize\hr\model\core\dao\OriginDao.class
+com\ontimize\hr\model\core\service\CandidateService.class
+com\ontimize\hr\model\core\dao\UserRoleDao.class
+com\ontimize\hr\model\core\dao\StatusDao.class
+com\ontimize\hr\model\core\dao\CandidateDao.class
+com\ontimize\hr\model\core\dao\OfferDao.class
+com\ontimize\hr\model\core\service\UserService.class
+com\ontimize\hr\model\core\dao\OfferCandidateStatusDao.class
+com\ontimize\hr\model\core\dao\ExperienceLevelDao.class
+com\ontimize\hr\model\core\dao\OfferCandidatesDao.class
+com\ontimize\hr\model\core\service\OfferService.class
+com\ontimize\hr\model\core\dao\ProfileDao.class
+com\ontimize\hr\model\core\dao\OfferStatusDao.class
+com\ontimize\hr\model\core\dao\UserDao.class
+com\ontimize\hr\model\core\service\MasterService.class
+com\ontimize\hr\model\core\dao\EducationDao.class
